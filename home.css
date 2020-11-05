@@ -1,0 +1,62 @@
+/*Home*/
+html, body {
+	overflow: hidden;
+	user-select: none;
+  padding: 0;
+  margin: 5px 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  border:none;
+  color: rgb(0, 0, 0);
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0px 0px;
+  position: relitive; 
+  font-family: Roboto Thin;
+}
+
+.button:hover {
+  color: black;
+  opacity: 0.5;
+}
+
+@keyframes ColorEffect {
+    0% {background-color: #48a6e9}
+    30% {background-color: #66bf39}
+    60% {background-color: #eb670f}
+    90% {background-color: #f35}
+    100% {background-color: #864cbf}
+}
+
+body {
+    -webkit-animation: ColorEffect 20s infinite;
+    animation: ColorEffect 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.text{
+  margin: 50px 0px;
+  font-family: Roboto Thin;
+  color: white;
+  position: fixed;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.TextBox {
+  background-color: white;
+  width: 1200px;
+  height: 1000px;
+  margin: 100px 20px;
+}
