@@ -1,8 +1,6 @@
-<!--Home-->
 <!DOCTYPE html>
 <html>
   <head>
-    <!--everything that doesn't display on screen-->
     <title>Sam</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css"/>
@@ -10,26 +8,88 @@
     <link rel="icon" href="favicon.png" type="image" sizes="16x16">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+              window.location.hash = hash;
+            });
+          } 
+        });
+      });
+    </script>
   </head>
   <body>
-    <!--everything that displays on screen-->
     <div class="TopNav">
-        <input type="button" class="button" value="About">
-        <input type="button" class="button" value="Projects"/>
-        <input type="button" class="button" value="Skills"/>
+      <a href="#About"><input type="button" class="button" value="About"/><a>
+      <a href="#Projects"><input type="button" class="button" value="Projects"/></a>
+      <a href="#Skills"><input type="button" class="button" value="Skills"/></a>
     </div>
+    <svg width="300px" height="300px" viewBox="0 0 837 1045">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#ff2b00" stroke-width="10" sketch:type="MSShapeGroup"></path>
+        <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#ff2b00" stroke-width="10" sketch:type="MSShapeGroup"></path>
+        <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#ff2b00" stroke-width="10" sketch:type="MSShapeGroup"></path>
+        <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#ff2b00" stroke-width="10" sketch:type="MSShapeGroup"></path>
+      </g>
+    </svg>
     <div class="textbox">
-        <div class="Links">
-          <!--put link png's in here-->
-        </div>
-        <div class="heading">
-          <!--heading-->
-          <h1 style="font-size:3vw;" class="heading">Header</h1>
-        </div>
-        <div class="text">
-          <!--paragraph-->
-          <p style="font-size:1.5vw;" class="text">Paragraph</p>
+      <div class="heading">
+        <h1 style="font-size:3vw;" class="heading" id="About">
+          <strong>
+            Hello!
+          </strong>
+        </h1>
+      </div>
+      <div class="text section" id="About">
+        <p style="font-size:1.5vw;" class="text">
+          <strong>
+            My name is Sam, I love programming and gaming.<br>
+          </strong>
+        </p>
+      </div>
+    </div>
+    <div class="section" id="Projects">
+      <div class="project_bg">
+        <div class="project_textbox">
+          <div class="project_style">
+            <h1 style="font-size:3vw;" class="Projects">
+              <strong>
+                Projects
+              </strong>
+            </h1>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="section" id="Skills">
+      <div class="sky_bg">
+        <div class="skills_textbox">
+          <div class="skills_style">
+            <h1 style="font-size:3vw;" class="Skills">
+              <strong>
+                Skills
+              </strong>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <footer>
+        <p1>
+          <strong>
+            [©2020 V1.1.2 By Sam]
+          </strong>
+        </p1>
+      </footer>
+    </div>
   </body>
 </html>
+
