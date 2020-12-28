@@ -15,7 +15,7 @@ html, body{
   width: 100%;
 }
 body{
-  background-color: rgb(40,40,40);
+  background-color: rgb(30, 30, 30);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,9 +25,11 @@ body{
 |        buttons  section      |
 \-----------------------------*/
 .button1{
+  transition: background 600ms;
+  -webkit-appearance: none;
   outline: 0;
   border-radius: 1.5px;
-  background-color: rgb(230, 54, 18);
+  background-color: black;
   border:none;
   color:white;
   padding:15px 30px;
@@ -41,9 +43,11 @@ body{
   font-family:Roboto Thin;
 }
 .button2{
+  transition: background 600ms;
+  -webkit-appearance: none;
   outline: 0;
   border-radius: 1.5px;
-  background-color: rgb(230, 54, 18);
+  background-color: black;
   border:none;
   color:white;
   padding:15px 30px;
@@ -57,9 +61,11 @@ body{
   font-family:Roboto Thin;
 }
 .button3{
+  transition: background 600ms;
+  -webkit-appearance: none;
   outline: 0;
   border-radius: 1.5px;
-  background-color: rgb(230, 54, 18);
+  background-color: black;
   border:none;
   color:white;
   padding:15px 30px;
@@ -73,16 +79,16 @@ body{
   font-family:Roboto Thin;
 }
 .button1:hover{
-  color: white;
-  background: rgb(242,119,63);
+  color: rgb(255, 255, 255);
+  background: #5af227;
 }
 .button2:hover{
-  color: white;
-  background: rgb(242,119,63);
+  color: rgb(255, 255, 255);
+  background: #5af227;
 }
 .button3:hover{
-  color: white;
-  background: rgb(242,119,63);
+  color: rgb(255, 255, 255);
+  background: #5af227;
 }
 
 /*-----------------------------\
@@ -106,6 +112,7 @@ body{
 /*-----------------------------\
 |        about section         |
 \-----------------------------*/
+
 .about_heading{
   text-align: center;
   margin-top: 200px;
@@ -115,7 +122,7 @@ body{
 }
 
 .about_text{
-  /*margin-left: 500px;*/
+
   text-align: left;
   margin-top: 20px;
   color: rgb(255, 255, 255);
@@ -125,7 +132,7 @@ body{
 
 
 .about_bg{
-  background-color: rgb(40,40,40);
+  background-color: rgb(30,30,30);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,6 +142,7 @@ body{
 /*-----------------------------\
 |        projects section      |
 \-----------------------------*/
+
 .project_heading{
   text-align: center;
   margin-top: 200px;
@@ -144,7 +152,7 @@ body{
 }
 
 .project_text{
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
   color: rgb(255, 255, 255);
   font-family: roboto;
@@ -152,7 +160,7 @@ body{
 }
 
 .project_bg{
-  background-color: rgb(40,40,40);
+  background-color: rgb(30,30,30);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,8 +168,9 @@ body{
   padding: 0;
 }
 /*-----------------------------\
-|        skiils section        |
+|        skills section        |
 \-----------------------------*/
+
 .skill_heading{
   text-align: center;
   margin-top: 200px;
@@ -171,16 +180,15 @@ body{
 }
 
 .skill_text{
-  text-align: center;
+  text-align:left;
   margin-top: 20px;
   color: rgb(255, 255, 255);
   font-family: roboto;
   font-size: 25px;
 }
 
-
 .skill_bg{
-  background-color: rgb(40,40,40);
+  background-color: rgb(30,30,30);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -203,61 +211,22 @@ body{
 
 ::-webkit-scrollbar-thumb {
   z-index:5;
-  background: rgb(230, 54, 18);
+  background: #5af227;
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(242,119,63);
+  background: #5af227;
   z-index:5;
 }
-/*-----------------------------\
-|       Graphic Effects        |
-\-----------------------------*/
-#Polygon-1,#Polygon-2,#Polygon-3,#Polygon-4,#Polygon-4,#Polygon-5{
-  animation:float 1s infinite ease-in-out alternate;
-}
 
-#Polygon-2{
-  animation-delay:.2s;
-}
-
-#Polygon-3{
-  animation-delay:.4s;
-}
-
-#Polygon-4{
-  animation-delay:.6s;
-}
-
-#Polygon-5{
-  animation-delay:.8s;
-}
-
-@keyframes float{
-  100% {
-    transform: translateY(20px);
-  }
-}
 /*-----------------------------\
 |        footer                |
 \-----------------------------*/
 .footer{
-  color: rgb(255, 43, 0);  
+  color: rgb(30, 255, 0);  
   font-family: roboto;
   margin-left: 0px;
-}
-/*-----------------------------\
-|             SVG              |
-\-----------------------------*/
-svg {
-  width: 200px;
-  height: 200px;
-  position:fixed;
-  top:50%;
-  left:50%;
-  margin-top:0px;
-  margin-left: 500px;
 }
 
 .section {
@@ -272,7 +241,7 @@ svg {
   user-select: none;
   font-weight:1000;
   font-family: roboto;
-  color: rgb(255, 94, 0);
+  color: rgb(0, 183, 255);
   font-size: 20px;
 }
 
@@ -281,7 +250,7 @@ svg {
 \-----------------------------*/
 @media(max-width: 900px){
   /* i-pad */
-
+  
 }
 
 @media(max-width:500px){
@@ -297,24 +266,29 @@ svg {
   }
   .about_text,.project_text,.skill_text{
     font-size:20px;
+    margin-left: 30px
   }
-  .about_text{
-    margin-left: 30px;
+  .spacerline{
+    font-size:15px;
+  }
+  .about_heading{
+    font-size: 20px;
   }
 }
 a:link {
-  color:rgb(230, 54, 18);
+  color:rgb(0, 255, 21);
   text-decoration: none;
 }
 a:visited {
-  color:rgb(230, 54, 18);
+  color:rgb(0, 255, 21);
   text-decoration: none;
 }
 a:hover {
-  color:rgb(242,119,63);
+  transition: color .7s;
+  color:#279df2;
   text-decoration: underline;
 }
 a:active {
-  color:rgb(242,119,63);
+  color:#279df2;
   text-decoration: underline;
 }
