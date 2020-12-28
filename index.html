@@ -9,21 +9,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
     <script>
       $(document).ready(function(){
-      $("a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
               window.location.hash = hash;
             });
-          } 
+          }
         });
       });
-    </script>
+  </script>
   </head>
   <body>
     <div class="navbox">
@@ -52,24 +53,18 @@
             <div class="about_text">
               <p>
                 <strong>
-                  My name is Sam, I love programming and gaming.<br>
-                  You can find me on
-                  <a href="https://scratch.mit.edu/users/sammax123/">Scratch</a>,
-                  <a href="https://github.com/SamDamonte">Github</a>, and
-                  <a href="https://repl.it/@SamCoding123">Repl.it</a>.<br>
+                  My name is Sam, I love coding, gaming, mountain biking, and<br> rc rally car racing.
+                  You can find me on 
+                  <a target="_blank" rel="noopener noreferrer" href="https://scratch.mit.edu/users/sammax123/">Scratch</a>,
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/SamDamonte">Github</a>, and
+                  <a target="_blank" rel="noopener noreferrer" href="https://repl.it/@SamCoding123">Repl.it</a>.<br>
+                  I have made many projects with python and node.js but, Right now<br>
+                  I am making a python terminal with my brother.
                 </strong>
               </p>
             </div>
           </div>
         </div>
-        <!--<svg width="300px" height="300px" viewBox="0 0 837 1045"> 
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-            <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#ff2b00" stroke-width="10" sketch:type="MSShapeGroup"></path>
-            <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#ff2b00" stroke-width="10" sketch:type="MSShapeGroup"></path>
-            <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#ff2b00" stroke-width="10" sketch:type="MSShapeGroup"></path>
-            <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#ff2b00" stroke-width="10" sketch:type="MSShapeGroup"></path>
-          </g>
-        </svg>-->
       </div>
     </div>
     <div class="section" id="Skills">
@@ -80,13 +75,25 @@
               Skills
             </strong>
           </h1>
+          <div class="spacerline">
+            <p>
+              <strong><<->><<->><<->><<->><<->><<->><<->><<->><<->><<->></strong>
+            </p>
+          </div>
         </div>
-        <div class="skill_text">
-          <p>
-            <strong>
-              testingtestingtesting<br>
-            </strong>
-          </p>
+        <div style="text-align:center;">
+          <div style="display:inline-block;text-align:center;">
+            <div class="skill_text">
+              <p>
+                <strong>
+                  I love coding and am probably the best at making websites <br>
+                  out of all my skills. I do know a little of jquery. I know<br> 
+                  javascript at least most of it. I mostly like coding with <br>
+                  python and node.js.<br>
+                </strong>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -98,13 +105,24 @@
               Projects
             </strong>
           </h1>
+          <div class="spacerline">
+            <p>
+              <strong><<->><<->><<->><<->><<->><<->><<->><<->><<->><<->></strong>
+            </p>
+          </div>
         </div>
-        <div class="project_text">
-          <p>
-            <strong>
-              testingtestingtestingtesting<br>
-            </strong>
-          </p>
+        <div style="text-align:center;">     
+          <div style="display:inline-block;text-align:center;">
+            <div class="project_text">
+              <p>
+                <strong>
+                  testingtestingtestingtesting<br>
+                  testingtestingtestingtesting<br>
+                  testingtestingtestingtesting<br>
+                </strong>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
